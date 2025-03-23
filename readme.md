@@ -1,7 +1,6 @@
-# 🚀 **VizCoAssist: AI-Powered Codebase Analysis & Call Agent Solution**  
+# 🚀 **VizCoAssist.ai : AI-Powered Codebase Analysis & Call Agent**  
 
 ## 👥 **Team Name: Drastic Innovators**  
-📍 **College:** Sri Eshwar College of Engineering  
 
 **"Transforming Codebase Analysis & Customer Support with AI!"**  
 
@@ -43,34 +42,47 @@
 
 # **🔄 VizCoAssist Workflow**  
 
-## **📊 Step-by-Step Explanation**  
+## 🔄 VizCoAssist Journey: From Code to Clarity
 
-### **🟢 Step 1: Codebase Upload**
-🔹 The user uploads a **ZIP file** or provides a **Git Repository Link**.  
-🔹 Backend extracts the **project structure**, **files**, and **dependencies**.  
+### 🟢 Upload Portal: The Gateway to Insights
+- Users can upload a **ZIP file** containing their codebase or provide a **Git Repository URL**
+- Backend system automatically extracts the complete **project structure**, **file hierarchy**, and **dependency relationships**
+- Processing status is displayed in real-time with progress indicators
 
-### **🟢 Step 2: Code Analysis & Diagram Generation**
-🔹 VizCoAssist uses **OpenAI APIs** to analyze the **code structure**.  
-🔹 Generates **High-Level Architecture (Mermaid Diagram)** for an overview.  
-🔹 Creates **Low-Level Architecture (Mermaid Diagram)** for detailed flow.  
+### 🟢 Vision Architect: Bringing Structure to Complexity
+- **OpenAI's advanced APIs** perform deep code structure analysis
+- System generates comprehensive **High-Level Architecture Diagrams** using Mermaid for executive overview
+- Detailed **Low-Level Architecture Diagrams** are created to visualize component interactions and data flow
+- All diagrams are interactive and can be exported in multiple formats
 
-### **🟢 Step 3: Summarization of Codebase & Individual Files**
-🔹 Uses **Ollama (Llama 3.2)** to generate:  
-✅ **Overall project summary** 📜  
-✅ **Individual file summary** (Click on a file to view insights)  
+### 🟢 Code Narrator: The Story Behind Your Code
+- **Ollama (Llama 3.2)** provides sophisticated natural language processing capabilities to:
+  - Generate concise yet comprehensive **project-level summaries**
+  - Create context-aware **file-level documentation** for each component
+  - Identify key architectural patterns and design decisions
+- Each summary is accessible through an intuitive interface
 
-### **🟢 Step 4: RAG-Based Chatbot for Code Querying**
-🔹 Users can ask **questions about the codebase**.  
-🔹 The **Retrieval-Augmented Generation (RAG) model** fetches relevant insights.  
+### 🟢 Knowledge Explorer: Conversational Code Discovery
+- The integrated **RAG-Based Chatbot** allows natural language queries about any aspect of the codebase
+- **Retrieval-Augmented Generation** technology ensures responses are grounded in the actual code
+- System maintains conversation context for multi-turn technical discussions
+- Code snippets in responses are syntax-highlighted and executable
 
-### **🟢 Step 5: Tech Stack & Quality Analysis**
-🔹 Extracts **Programming Languages, Frameworks, and Libraries Used**.  
-🔹 Calculates **Code Quality Score** based on best practices.  
+### 🟢 Quality Inspector: Technical Excellence Assessment
+- Automated extraction of complete **technology stack** with version information
+- Identification of framework usage patterns and library dependencies
+- **Code Quality Metrics** evaluation based on industry standards:
+  - Complexity analysis
+  - Maintainability index
+  - Security vulnerability detection
+  - Performance bottleneck identification
 
-### **🟢 Step 6: AI Call Agent Assistance**
-🔹 **Users can interact with an AI-powered call agent** for assistance.  
-🔹 Handles **technical queries**, **troubleshooting**, and **customer support**.  
-
+### 🟢 Voice Companion: Your Always-Available Support Expert
+- Users connect with an **AI-powered voice assistant** for real-time technical support
+- The system handles complex **troubleshooting sessions** with natural conversation flow
+- Integrates codebase knowledge with support protocols for accurate assistance
+- Provides 24/7 availability with consistent quality and zero wait times
+  
 📌 **🔗 Workflow Diagram:**  
 ![image](https://github.com/logabaalan777/images/blob/main/assets/1.png)  
 
@@ -87,131 +99,212 @@
 
 ## **🛠 AI Call Agent Features & Architecture**  
 
-### **📞 Step-by-Step AI Call Agent Flow**  
+## 🎙️ AI Call Agent Experience: Voice-Powered Technical Support
 
-### **🟢 Step 1: User Initiates a Call**
-🔹 Users connect via **phone or web-based AI voice assistant**.  
-🔹 Call gets **routed to the AI Call Agent**.  
+### 🟢 Conversation Initiation: The First Hello
+- Users seamlessly connect through their preferred channel: **phone call or web-based voice interface**
+- System automatically **routes the conversation** to the AI Call Agent with zero wait time
+- Voice recognition immediately adapts to user's speech patterns and accent
 
-### **🟢 Step 2: Speech-to-Text Processing**
-🔹 The **user's speech is transcribed** using **Whisper API / Deepgram**.  
+### 🟢 Voice Understanding: Capturing Every Detail
+- **Advanced speech recognition** powered by **Whisper API / Deepgram** converts spoken words to text
+- System maintains high accuracy even with technical jargon and code terminology
+- Real-time transcription enables parallel processing for faster response times
 
-### **🟢 Step 3: Intent Recognition & Query Processing**
-🔹 AI **detects the user’s intent** (e.g., bug fixing, documentation request).  
-🔹 The **OpenAI's model** understands the query context.  
+### 🟢 Intelligence Activation: Decoding User Needs
+- Sophisticated AI algorithms **identify the precise intent** behind each request
+- System recognizes specific technical contexts (e.g., bug fixing, feature requests, documentation needs)
+- **OpenAI's model** builds a comprehensive understanding of multi-turn conversations
 
-### **🟢 Step 4: AI Generates Responses**
-🔹 AI retrieves relevant information and **formats an intelligent response**.  
-🔹 Uses **Ollama (Llama 3.2)** for accurate code-related insights.  
+### 🟢 Knowledge Synthesis: Crafting Perfect Answers
+- AI dynamically retrieves context-relevant information from knowledge bases
+- System **formulates precise, actionable responses** tailored to the specific query
+- **Ollama (Llama 3.2)** provides specialized reasoning for complex code-related questions
+- Responses include code snippets, troubleshooting steps, or documentation references as needed
 
-### **🟢 Step 5: Text-to-Speech (TTS) for AI Response**
-🔹 The response is **converted into human-like speech** using **ElevenLabs API**.  
-🔹 The user **hears the answer in real time** and can ask follow-up questions.  
+### 🟢 Voice Delivery: Human-Like Communication
+- Responses are **transformed into natural speech** using **ElevenLabs API**
+- Voice output features natural intonation, appropriate pacing, and emotional resonance
+- Users experience **real-time conversation** with contextual memory for follow-up questions
+- System adapts tone and technical depth based on user expertise level
 
 📌 **🔗 AI Call Agent Architecture:**  
 ![image](https://github.com/logabaalan777/images/blob/main/assets/2.png)  
 
 ---
 
-## **💻 Tech Stack Used in VizCoAssist**  
+## 💻 Tech Stack
 
-### **Frontend** 🎨  
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge) 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)  
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge)  
+### Frontend Development
+<div>
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" alt="Vite" />
+</div>
 
-### **Backend** ⚙️  
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)  
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=for-the-badge) 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-0084FF?logo=websocket&logoColor=white&style=for-the-badge)
+### Backend Infrastructure
+<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=for-the-badge" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=for-the-badge" alt="Redis" />
+</div>
 
-### **AI & NLP** 🤖  
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white&style=for-the-badge)  
-![Ollama](https://img.shields.io/badge/Ollama-2E86C1?style=for-the-badge)  
+### AI & NLP Technologies
+<div>
+  <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white&style=for-the-badge" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Ollama-2E86C1?style=for-the-badge" alt="Ollama" />
+  <img src="https://img.shields.io/badge/LangChain-3CB371?style=for-the-badge" alt="LangChain" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFAC1C?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" />
+</div>
 
-### **Voice & Telephony** 🎙️  
-![Twilio](https://img.shields.io/badge/Twilio-F22F46?logo=twilio&logoColor=white&style=for-the-badge)  
-![Deepgram](https://img.shields.io/badge/Deepgram-000000?style=for-the-badge&logo=deepgram&logoColor=white)
+### Voice & Telephony
+<div>
+  <img src="https://img.shields.io/badge/Twilio-F22F46?logo=twilio&logoColor=white&style=for-the-badge" alt="Twilio" />
+  <img src="https://img.shields.io/badge/Deepgram-000000?style=for-the-badge&logo=deepgram&logoColor=white" alt="Deepgram" />
+  <img src="https://img.shields.io/badge/ElevenLabs-2D3748?style=for-the-badge" alt="ElevenLabs" />
+  <img src="https://img.shields.io/badge/OpenAI%20Whisper-00A67E?style=for-the-badge" alt="OpenAI Whisper" />
+</div>
 
 ---
 
-## 📌 High-Level Architecture Diagram  
-The high-level architecture of **VizCoAssist** represents the overall workflow, showing how different components interact.  
+## ⚙️ System Requirements
 
-![image](https://github.com/logabaalan777/images/blob/main/assets/mermaid_high_level_diagram.png)  
-
-## 🔍 Low-Level Architecture Diagram  
-The low-level architecture provides a detailed breakdown of system interactions, APIs, and data flow.  
-
-![image](https://github.com/logabaalan777/images/blob/main/assets/mermaid_low_level_diagram.png)  
+- **Python**: 3.9+ with pip
+- **Node.js**: 18+ with npm/yarn
+- **Browser**: Chrome/Chromium (for rendering Mermaid diagrams)
+- **RAM**: 8GB minimum (16GB recommended for large codebases)
+- **Storage**: 2GB free space
+- **Optional**: Java Runtime Environment
 
 ---
 
-## System Requirements
+## 🚀 Installation & Setup
 
-- Python 3.9+
-- Chrome/Chromium browser (for rendering Mermaid diagrams)
-- Java Runtime Environment (for PlantUML, if used)
+### Quick Start (Docker)
 
-## API Endpoints
+```bash
+# Clone the repository
+git clone https://github.com/logabaalan777/VizCoAssist.git
+cd VizCoAssist
 
-### Upload Codebase
+# Build and run with Docker
+docker-compose up -d
+
+# Access the application
+open http://localhost:3000
 ```
-POST /upload
-```
-Upload a ZIP file containing your codebase. Returns a session ID for subsequent operations.
 
-### Generate Architecture
-```
-POST /sessions/{session_id}/generatearchitecture?diagram_type=mermaid
-```
-Analyze the codebase and generate architecture diagrams. Supports `mermaid` and `plantuml` formats.
+### Manual Setup
 
-### Get Codebase Summary
+#### Backend Setup
+
+```bash
+# Navigate to backend directory
+cd backend
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your API keys
+
+# Start the server
+uvicorn main:app --reload
 ```
-GET /sessions/{session_id}/summary
+
+#### Frontend Setup
+
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
-Retrieve the summary of the entire codebase.
 
-### Get File Summary
+#### Local LLM Setup with Ollama
+
+```bash
+# Install Ollama from https://ollama.ai/
+# Then pull the required model:
+ollama pull llama3.2:latest
 ```
-GET /sessions/{session_id}/filesummary?file_path=path/to/file.py
+
+---
+
+## 🔌 API Reference
+
+### Codebase Analysis Endpoints
+
 ```
-Retrieve the summary of a specific file in the codebase.
-
-### Get Processed Files
+POST /api/upload
 ```
-GET /sessions/{session_id}/getfilesaccessed
+Upload a ZIP file or Git repository URL to analyze.
+
 ```
-Get a list of all files that have been processed in the session.
-
-### Get Session Status
+POST /api/sessions/{session_id}/architecture
 ```
-GET /sessions/{session_id}/status
+Generate architecture diagrams (supports Mermaid and PlantUML).
+
 ```
-Check the current status of a session.
+GET /api/sessions/{session_id}/summary
+```
+Get comprehensive codebase summary.
 
-## Using Local LLM with Ollama
+```
+GET /api/sessions/{session_id}/file/{file_path}
+```
+Get detailed analysis of a specific file.
 
-By default, VizCoAssist is configured to use [Ollama](https://ollama.ai/) as a local LLM provider. To set this up:
+```
+GET /api/sessions/{session_id}/techstack
+```
+Extract technologies and frameworks used.
 
-1. Install Ollama from [ollama.ai](https://ollama.ai/)
-2. Run the Ollama server
-3. Pull the models:
-   ```bash
-   ollama pull llama3.2:latest
-   ```
+```
+GET /api/sessions/{session_id}/quality
+```
+Analyze code quality and security vulnerabilities.
 
-## Using OpenAI or Anthropic
+### AI Call Agent Endpoints
 
-To use OpenAI or Anthropic for diagram generation:
+```
+POST /api/call/start
+```
+Initiate a new call session.
 
-1. Set your API keys in the `.env` file:
-   ```
-   OPENAI_API_KEY=sk-your-openai-key
-   ANTHROPIC_API_KEY=sk-ant-your-anthropic-key
-   ```
+```
+POST /api/call/speech
+```
+Send audio for speech-to-text processing.
+
+```
+GET /api/call/response
+```
+Get AI-generated voice response.
+
+---
+
+## 📊 Future Roadmap
+
+Our vision for VizCoAssist extends beyond its current capabilities:
+
+- **🧠 Advanced Codebase Intelligence** - Predictive suggestions for code improvements
+- **🌐 Multi-Language Support** - Voice agent with support for 20+ languages
+- **📱 Mobile SDK Integration** - Embed the AI call agent in native mobile apps
+- **🔄 CI/CD Pipeline Analysis** - Automated assessment of deployment workflows
+- **🛡️ Enhanced Security Scanning** - Deeper vulnerability detection with remediation suggestions
+- **🔗 Ecosystem Integration** - Connect with Jira, GitHub, GitLab, and other developer tools
 
 ---
 
@@ -227,9 +320,17 @@ To use OpenAI or Anthropic for diagram generation:
 |----------------|----------|--------|
 | **Logabaalan R S** | [🔗 LinkedIn](https://www.linkedin.com/in/logabaalan-r-s-94ba82259/) | [🐙 GitHub](https://github.com/logabaalan777) |
 | **Karthikeyan M**  | [🔗 LinkedIn](https://www.linkedin.com/in/karthikeyan-m30112004/) | [🐙 GitHub](https://github.com/KarthikeyanM3011) |
-| **Monish G**       | [🔗 LinkedIn](https://www.linkedin.com/in/monish-g-37a88b259/) | [🐙 GitHub](#) |
-| **Hari Babu R**    | [🔗 LinkedIn](#) | [🐙 GitHub](#) |
+| **Monish G**       | [🔗 LinkedIn](https://www.linkedin.com/in/monish-g-37a88b259/) | [🐙 GitHub](https://github.com/Monishg2004) |
+| **Hari Babu R**    | [🔗 LinkedIn](https://www.linkedin.com/in/hari-babu-r-b13b68259/) | [🐙 GitHub](https://github.com/hbu2004) |
 
 ---
 
-📌 **Like Our Project?** ⭐ Star this repository and support us! 
+<div align="center">
+  <blockquote>
+    <p><i>"The future of development isn't just about writing better code—it's about understanding code better. VizCoAssist bridges the gap between complex codebases and human understanding, transforming how we build, maintain, and support software systems."</i></p>
+    <footer>— Team Drastic Innovators</footer>
+  </blockquote>
+</div>
+
+---
+ **Like Our Project?** ⭐ Star this repository and support us! 
