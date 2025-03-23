@@ -179,6 +179,7 @@ The low-level architecture provides a detailed breakdown of system interactions,
 
 ![image](https://github.com/logabaalan777/images/blob/main/assets/mermaid_low_level_diagram.png) 
 
+---
 
 ## ⚙️ System Requirements
 
