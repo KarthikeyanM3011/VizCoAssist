@@ -150,15 +150,12 @@
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Python" />
   <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=for-the-badge" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=for-the-badge" alt="Redis" />
 </div>
 
 ### AI & NLP Technologies
 <div>
   <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white&style=for-the-badge" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Ollama-2E86C1?style=for-the-badge" alt="Ollama" />
-  <img src="https://img.shields.io/badge/LangChain-3CB371?style=for-the-badge" alt="LangChain" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFAC1C?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face" />
 </div>
 
 ### Voice & Telephony
@@ -166,7 +163,6 @@
   <img src="https://img.shields.io/badge/Twilio-F22F46?logo=twilio&logoColor=white&style=for-the-badge" alt="Twilio" />
   <img src="https://img.shields.io/badge/Deepgram-000000?style=for-the-badge&logo=deepgram&logoColor=white" alt="Deepgram" />
   <img src="https://img.shields.io/badge/ElevenLabs-2D3748?style=for-the-badge" alt="ElevenLabs" />
-  <img src="https://img.shields.io/badge/OpenAI%20Whisper-00A67E?style=for-the-badge" alt="OpenAI Whisper" />
 </div>
 
 ---
