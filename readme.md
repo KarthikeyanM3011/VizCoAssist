@@ -169,6 +169,17 @@
 
 ---
 
+## 📌 High-Level Architecture Diagram  
+The high-level architecture of **VizCoAssist** represents the overall workflow, showing how different components interact.  
+
+![image](https://github.com/logabaalan777/images/blob/main/assets/mermaid_high_level_diagram.png)  
+
+## 🔍 Low-Level Architecture Diagram  
+The low-level architecture provides a detailed breakdown of system interactions, APIs, and data flow.  
+
+![image](https://github.com/logabaalan777/images/blob/main/assets/mermaid_low_level_diagram.png) 
+
+
 ## ⚙️ System Requirements
 
 - **Python**: 3.9+ with pip
