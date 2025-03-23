@@ -150,7 +150,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Python" />
   <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=for-the-badge" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  ![WebSockets](https://img.shields.io/badge/WebSockets-0084FF?logo=websocket&logoColor=white&style=for-the-badge)
+  <img src="https://img.shields.io/badge/WebSockets-0084FF?logo=websocket&logoColor=white&style=for-the-badge" alt="WebSockets" />
 
 </div>
 
