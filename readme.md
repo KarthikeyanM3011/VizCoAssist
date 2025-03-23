@@ -20,7 +20,7 @@
 
 🎯 **Our Goal?** **To revolutionize how developers analyze, understand, and enhance codebases while providing AI-powered customer support.** 🚀  
 
-🎥 **[🔗 Demo Video](https://drive.google.com/file/d/17XFAx7G3UzldH5wuSrZXFLYVWx2dfH7x/view?usp=drive_link) - Watch VizCoAssist in Action!**  
+🎥 **[🔗Demo Video](https://drive.google.com/file/d/17XFAx7G3UzldH5wuSrZXFLYVWx2dfH7x/view?usp=drive_link) - Watch VizCoAssist in Action!**  
 
 ---
 
