@@ -20,7 +20,7 @@
 
 🎯 **Our Goal?** **To revolutionize how developers analyze, understand, and enhance codebases while providing AI-powered customer support.** 🚀  
 
-🎥 **[🔗 Demo Video](#) - Watch VizCoAssist in Action!**  
+🎥 **[🔗 Demo Video](https://drive.google.com/file/d/17XFAx7G3UzldH5wuSrZXFLYVWx2dfH7x/view?usp=drive_link) - Watch VizCoAssist in Action!**  
 
 ---
 
@@ -141,47 +141,6 @@
 - Chrome/Chromium browser (for rendering Mermaid diagrams)
 - Java Runtime Environment (for PlantUML, if used)
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/VizCoAssist.git
-   cd VizCoAssist
-   ```
-
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Create a `.env` file based on the provided example:
-   ```bash
-   cp .env.example .env
-   ```
-
-5. Edit the `.env` file to configure your environment:
-   - Set API keys for OpenAI and Anthropic (optional)
-   - Configure LLM URL (default uses Ollama's local API)
-   - Set desired diagram type and other preferences
-
-## Running the Application
-
-Start the FastAPI server:
-
-```bash
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-The API will be available at `http://localhost:8000`.
-
-For automatic API documentation, visit `http://localhost:8000/docs`.
-
 ## API Endpoints
 
 ### Upload Codebase
@@ -219,27 +178,6 @@ Get a list of all files that have been processed in the session.
 GET /sessions/{session_id}/status
 ```
 Check the current status of a session.
-
-## Directory Structure
-
-```
-VizCoAssist/
-├── app/                 # Main application package
-│   ├── main.py          # FastAPI application 
-│   ├── config.py        # Configuration
-│   ├── utils/           # Utility functions
-│   ├── services/        # Core services
-│   ├── readers/         # File readers
-│   └── renderers/       # Diagram renderers
-├── data/                # Data storage
-│   ├── uploads/         # Uploaded ZIP files
-│   ├── sessions/        # Session data
-│   ├── output/          # Generated diagrams
-│   └── cache/           # Cache data
-├── tests/               # Test files
-├── requirements.txt     # Project dependencies
-└── .env.example         # Environment variables example
-```
 
 ## Using Local LLM with Ollama
 
