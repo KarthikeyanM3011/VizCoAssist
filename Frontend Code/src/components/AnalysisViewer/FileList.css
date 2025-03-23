@@ -1,0 +1,283 @@
+/* FileList Component Styles */
+
+.file-list-container {
+  --primary: #6F4A8E;
+  --primary-light: #A084DC;
+  --primary-dark: #3A1F5D;
+  --secondary: #05A3A3;
+  --secondary-light: #6BBAEC;
+  --accent: #FF7E47;
+  --bg-dark: #1E1E2E;
+  --bg-medium: #292A3E;
+  --bg-light: #323457;
+  --card-bg: rgba(41, 42, 62, 0.7);
+  --card-border: rgba(127, 31, 206, 0.3);
+  --text-bright: #F8F9FA;
+  --text-medium: #B8B9C4;
+  --text-dark: #6C7293;
+  --folder-color: #FFD43B;
+  --file-color: #B8B9C4;
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-bright);
+}
+
+/* Search Bar */
+.file-list-search {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.file-list-search input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  background-color: var(--bg-medium);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--text-bright);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.file-list-search input:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 1px var(--primary-light);
+}
+
+.file-list-search input::placeholder {
+  color: var(--text-dark);
+}
+
+.file-list-search svg {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--text-medium);
+}
+
+/* Sort Buttons */
+.file-list-sort {
+  display: flex;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  color: var(--text-medium);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.sort-button:hover {
+  color: var(--text-bright);
+  background-color: var(--bg-medium);
+}
+
+.sort-button.active {
+  color: var(--primary-light);
+  font-weight: 500;
+}
+
+.sort-indicator {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* File Tree */
+.file-tree {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-right: -0.5rem;
+}
+
+.file-tree::-webkit-scrollbar {
+  width: 6px;
+}
+
+.file-tree::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+  border-radius: 3px;
+}
+
+.file-tree::-webkit-scrollbar-thumb {
+  background-color: var(--bg-light);
+  border-radius: 3px;
+}
+
+.file-tree-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.file-tree-item:hover {
+  background-color: var(--bg-medium);
+}
+
+.file-tree-item.selected {
+  background-color: var(--primary-dark);
+}
+
+.file-tree-item.folder {
+  color: var(--folder-color);
+  font-weight: 500;
+}
+
+.file-tree-item.file {
+  color: var(--file-color);
+}
+
+.folder-icon,
+.file-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.folder-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--folder-color);
+}
+
+.file-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--text-medium);
+}
+
+.file-tree-name {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-size {
+  font-size: 0.75rem;
+  color: var(--text-dark);
+  margin-left: 0.5rem;
+}
+
+.file-tree-children {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading State */
+.file-list-container.loading {
+  justify-content: center;
+  align-items: center;
+}
+
+.file-list-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-medium);
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--bg-light);
+  border-top-color: var(--primary-light);
+  border-radius: 50%;
+  animation: spinner 1s infinite linear;
+  margin-bottom: 1rem;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error State */
+.file-list-container.error {
+  justify-content: center;
+  align-items: center;
+}
+
+.file-list-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--error);
+  padding: 2rem;
+  text-align: center;
+}
+
+.file-list-error svg {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1rem;
+}
+
+/* Empty State */
+.file-list-container.empty {
+  justify-content: center;
+  align-items: center;
+}
+
+.file-list-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-medium);
+  padding: 2rem;
+  text-align: center;
+}
+
+.file-list-empty svg {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+/* File Count Info */
+.file-list-info {
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  padding: 0.5rem 0;
+  text-align: right;
+  border-top: 1px solid var(--card-border);
+  margin-top: 0.5rem;
+}

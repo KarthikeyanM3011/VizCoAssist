@@ -1,0 +1,508 @@
+/* ChatbotPage Styles */
+
+.chatbot-page {
+    --header-height: 70px;
+    --primary: #6F4A8E;
+    --primary-light: #A084DC;
+    --primary-dark: #3A1F5D;
+    --secondary: #05A3A3;
+    --secondary-light: #6BBAEC;
+    --accent: #FF7E47;
+    --bg-dark: #1E1E2E;
+    --bg-medium: #292A3E;
+    --bg-light: #323457;
+    --text-bright: #F8F9FA;
+    --text-medium: #B8B9C4;
+    --text-dark: #6C7293;
+    --card-bg: rgba(41, 42, 62, 0.7);
+    --card-border: rgba(111, 74, 142, 0.5);
+    --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --shadow-strong: 0 10px 40px rgba(0, 0, 0, 0.2);
+    --progress-bg: rgba(111, 74, 142, 0.2);
+    --progress-fill: linear-gradient(to right, var(--primary), var(--secondary));
+    --error-bg: rgba(244, 67, 54, 0.1);
+    --error-border: rgba(244, 67, 54, 0.3);
+    --error-color: #F44336;
+    
+    background-color: var(--bg-dark);
+    color: var(--text-bright);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-content {
+    flex: 1;
+    padding: calc(var(--header-height) + 2rem) 0 3rem;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Page Header */
+  .page-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, var(--text-bright), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .header-content p {
+    color: var(--text-medium);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Error Message */
+  .error-message {
+    background-color: var(--error-bg);
+    border: 1px solid var(--error-border);
+    color: var(--error-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .error-message svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.75rem;
+    stroke: var(--error-color);
+  }
+  
+  .close-button {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--error-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .close-button:hover {
+    opacity: 1;
+  }
+  
+  .close-button svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Loading Spinner */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-medium);
+  }
+  
+  .spinner-ring {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(111, 74, 142, 0.3);
+    border-top-color: var(--primary-light);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Not Initialized State */
+  .not-initialized-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .not-initialized-card {
+    background-color: var(--bg-medium);
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    padding: 2.5rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(111, 74, 142, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-light);
+  }
+  
+  .not-initialized-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-bright);
+  }
+  
+  .not-initialized-card p {
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 450px;
+  }
+  
+  .action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .action-button.primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--text-bright);
+    box-shadow: 0 4px 15px rgba(111, 74, 142, 0.3);
+  }
+  
+  .action-button.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(111, 74, 142, 0.4);
+  }
+  
+  .action-button.primary:active {
+    transform: translateY(1px);
+  }
+  
+  /* Initialization State */
+  .initialization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .initialization-card {
+    background-color: var(--bg-medium);
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .initialization-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-bright);
+    text-align: center;
+  }
+  
+  .initialization-card p {
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: var(--progress-bg);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: var(--progress-fill);
+    border-radius: 5px;
+    transition: width 0.5s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-glow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: glow 1.5s infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .init-progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .progress-percentage {
+    font-weight: 700;
+    color: var(--secondary-light);
+    font-size: 1.1rem;
+  }
+  
+  .current-step {
+    color: var(--text-medium);
+  }
+  
+  .initialization-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .init-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(111, 74, 142, 0.1);
+  }
+  
+  .init-step.active {
+    border-color: var(--primary-light);
+    background-color: rgba(111, 74, 142, 0.2);
+  }
+  
+  .step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--bg-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--text-medium);
+    transition: all 0.3s ease;
+  }
+  
+  .init-step.active .step-number {
+    background-color: var(--primary);
+    color: var(--text-bright);
+  }
+  
+  .step-text {
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .init-step.active .step-text {
+    color: var(--text-bright);
+  }
+  
+  .initialization-note {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: var(--bg-dark);
+    border-radius: 8px;
+    margin-bottom: 0;
+  }
+  
+  /* Chat Interface */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .chat-interface-wrapper {
+    background-color: var(--bg-medium);
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    overflow: hidden;
+    height: 600px;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  /* Example Questions Section */
+  .example-questions-section {
+    background-color: var(--bg-medium);
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .example-questions-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-bright);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--card-border);
+  }
+  
+  .example-questions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .example-question-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--bg-dark);
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .example-question-card:hover {
+    border-color: var(--primary-light);
+  }
+  
+  .example-question-card svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary-light);
+    flex-shrink: 0;
+  }
+  
+  .example-question-card span {
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  .example-questions-hint {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  
+  .example-questions-hint svg {
+    width: 20px;
+    height: 20px;
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+  
+  .example-questions-hint p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .page-header {
+      text-align: left;
+    }
+    
+    .header-content h1 {
+      font-size: 2rem;
+    }
+    
+    .example-questions-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .chat-interface-wrapper {
+      height: 500px;
+    }
+    
+    .not-initialized-card,
+    .initialization-card {
+      padding: 1.5rem;
+    }
+    
+    .initialization-steps {
+      gap: 0.75rem;
+    }
+    
+    .init-step {
+      padding: 0.75rem;
+    }
+    
+    .init-progress-text {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
