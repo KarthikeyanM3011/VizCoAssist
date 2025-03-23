@@ -220,7 +220,3 @@ To use OpenAI or Anthropic for diagram generation:
 ---
 
 📌 **Like Our Project?** ⭐ Star this repository and support us! 
-
-## License
-
-MIT License
