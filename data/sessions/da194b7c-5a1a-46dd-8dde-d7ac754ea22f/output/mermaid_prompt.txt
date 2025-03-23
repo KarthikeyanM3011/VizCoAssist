@@ -1,0 +1,128 @@
+**Objective:**
+
+Based on the provided codebase summary, generate a concise and professional **Mermaid flowchart** that visually represents the system's architecture, major components, and data flow. Focus on:
+
+- **Logical grouping of components** (e.g., services, databases, external APIs)
+- **Interactions** between components and external systems
+- **Data flow** between major components
+
+**Instructions:**
+
+- **Use a left-to-right flowchart layout** with inputs (e.g., users) on the left and external systems on the right.
+- **Group related components** using subgraphs.
+- **Label nodes and edges clearly**, using simple and descriptive names.
+- **Avoid special characters**, function names with arguments, parentheses, quotation marks, or any code-specific details in labels.
+- **Use only alphanumeric characters and underscores** in labels.
+- **Represent external systems distinctly**, and encapsulate all internal components within a grouping named after the codebase.
+- **Apply minimal colors** to differentiate logical groupings without overwhelming the diagram.
+- **Ensure Mermaid syntax is correct** and the diagram can be rendered without errors.
+- **Do not include any additional text** beyond the Mermaid code.
+- **Do not include code block markers such as ```mermaid, ```, :::mermaid, or :::; provide only the raw Mermaid code**
+- **Do not include any explanations, annotations, or text outside the Mermaid code.**
+- **Provide only the Mermaid code, without any additional text before or after it.**
+- **Do not include comments within the code unless they are necessary for the Mermaid syntax.**
+
+### Example Mermaid Flowchart Syntax:
+
+graph LR
+    User[User] --> UI[User_Interface]
+
+    subgraph Codebase
+        UI --> Backend[Backend_Service]
+        Backend --> API[External_API]
+    end
+
+    subgraph External_Systems
+        Backend --> DB[Database]
+        API --> ThirdParty[Third_Party_System]
+    end
+
+This is an example flowchart illustrating a basic system layout, which includes nodes, edges, subgraphs, and external systems.
+---
+**Input:**  
+- Codebase summary: Filename: logabaalan777-StockMarketAnalysis-d1c1312\app\analysis.py
+**Purpose**: This file is used for stock market analysis and visualization. It performs various analyses such as moving average, daily returns, volatility, cumulative returns, Bollinger Bands, candlestick analysis, RSI (Relative Strength Index), MACD (Moving Average Convergence Divergence), and volume analysis.
+
+**Key Components**: 
+- `calculate_rsi` function calculates the Relative Strength Index.
+- `perform_analysis` function creates a SparkSession, performs various analyses, and visualizes the results using Plotly Express.
+- `create_interactive_chart` function from the `app.charts` module is used to create interactive charts.
+
+**Data Flow**: Data flows into the file from external sources such as CSV files or databases, and it also generates new data through calculations and aggregations. The output of this file are various plots and visualizations.
+
+**Dependencies**: 
+- pandas
+- plotly.express
+- plotly.graph_objects
+- pyspark.sql
+- streamlit
+- app.charts
+
+**Interactions**: This file interacts with the user by providing interactive sliders, select boxes, and buttons. It also communicates with other parts of the system through APIs or database connections to retrieve data for analysis.
+
+Filename: logabaalan777-StockMarketAnalysis-d1c1312\app\charts.py
+**Purpose**: This file is used to generate interactive line charts for stock market analysis.
+
+**Key Components**: 
+- The main function `create_interactive_chart()` which takes in data, x and y column names, and a title.
+- A dependency on the `plotly.express` library, specifically its `px.line` function.
+
+**Data Flow**: This file processes financial data by creating an interactive line chart where the date is represented on the x-axis and stock prices are plotted against time.
+
+**Dependencies**: 
+- External: `plotly.express`
+- Internal: None
+
+**Interactions**: 
+- Communicates with external APIs or databases for financial data, which is then passed to this file.
+- Returns an interactive chart object displayed directly in a web browser.
+
+Filename: logabaalan777-StockMarketAnalysis-d1c1312\app\sql_query.py
+**Purpose**: The main goal of this file is to execute SQL queries on a SparkSession and display the results in a Streamlit application.
+
+**Key Components**: 
+- An `execute_sql_query` function that takes data as input, creates a SparkSession, executes an SQL query, and displays the results.
+- A Streamlit interface that allows users to enter their own SQL query and view the results.
+
+**Data Flow**: The file processes user-input data by creating a DataFrame, executing an SQL query on it, and displaying the results in a pandas DataFrame format within the Streamlit application.
+
+**Dependencies**: 
+- pyspark
+- streamlit
+- spark
+
+**Interactions**: This file communicates with other parts of the system through the Streamlit interface, which allows users to interactively enter and execute SQL queries.
+
+Filename: logabaalan777-StockMarketAnalysis-d1c1312\app\utils.py
+**Purpose**: This file is used to load and manipulate historical stock market data.
+
+**Key Components**: The key component of this file is the `load_stock_data` function, which retrieves stock data from a specified date range using the yfinance library.
+
+**Data Flow**: Data flows into the file through the `start_date` and `end_date` parameters, which are used to load historical stock market data for Apple Inc. (AAPL) ticker symbols.
+
+**Dependencies**: This file depends on the pandas and yfinance libraries.
+
+**Interactions**: The `load_stock_data` function interacts with other parts of the system by returning loaded data, while also printing error messages in case of loading failures.
+
+Filename: logabaalan777-StockMarketAnalysis-d1c1312\streamlit_app.py
+**Purpose**: The main goal of this file is to create a user interface for a stock market analysis application using the Streamlit framework.
+
+**Key Components**: 
+- Streamlit app with configuration and layout settings.
+- Date input fields for start and end dates.
+- Selectbox menu for choosing between analysis and SQL query options.
+- Buttons for fetching data and executing queries.
+- Functions for performing advanced analysis and executing SQL queries on loaded data.
+
+**Data Flow**: The application loads data based on user-input start and end dates. If data is successfully fetched, it is stored in session state and can be used by subsequent functions.
+
+**Dependencies**: 
+- Streamlit framework.
+- Internal modules 'analysis', 'sql_query', and 'utils'.
+- External SQL database (not explicitly shown in this file).
+
+**Interactions**: This file communicates with other parts of the system through its internal modules, which interact with external libraries or APIs to perform analysis and execute queries on loaded data.
+
+
+**Your Task:**  
+Generate valid Mermaid code that illustrates the system's architecture and data flows based on the provided summary. Output only the Mermaid code.

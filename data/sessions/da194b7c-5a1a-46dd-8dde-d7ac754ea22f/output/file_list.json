@@ -1,0 +1,37 @@
+[
+  {
+    "path": "logabaalan777-StockMarketAnalysis-d1c1312\\streamlit_app.py",
+    "extension": ".py",
+    "reader": "text_reader",
+    "size": 902,
+    "processed": true
+  },
+  {
+    "path": "logabaalan777-StockMarketAnalysis-d1c1312\\app\\analysis.py",
+    "extension": ".py",
+    "reader": "text_reader",
+    "size": 4442,
+    "processed": true
+  },
+  {
+    "path": "logabaalan777-StockMarketAnalysis-d1c1312\\app\\charts.py",
+    "extension": ".py",
+    "reader": "text_reader",
+    "size": 328,
+    "processed": true
+  },
+  {
+    "path": "logabaalan777-StockMarketAnalysis-d1c1312\\app\\sql_query.py",
+    "extension": ".py",
+    "reader": "text_reader",
+    "size": 674,
+    "processed": true
+  },
+  {
+    "path": "logabaalan777-StockMarketAnalysis-d1c1312\\app\\utils.py",
+    "extension": ".py",
+    "reader": "text_reader",
+    "size": 338,
+    "processed": true
+  }
+]

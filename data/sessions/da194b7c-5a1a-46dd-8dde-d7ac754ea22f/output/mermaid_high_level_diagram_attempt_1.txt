@@ -1,0 +1,34 @@
+graph LR
+    User[User] --> StreamlitApp[Streamlit_App]
+
+    subgraph Codebase
+        StreamlitApp --> Analysis[Analysis_Module]
+        StreamlitApp --> SQLQuery[SQL_Query_Module]
+        StreamlitApp --> Utils[Utils_Module]
+
+        Analysis --> Charts[Charts_Module]
+        Analysis --> DataStore[(External_Data_Source)]
+        
+        Charts --> Plotly[Plotly_Express]
+        
+        SQLQuery --> Spark[SparkSession]
+        Utils --> YFinance[YFinance_Library]
+        
+        Spark --> DataStore
+        YFinance --> DataStore
+    end
+
+    subgraph External_Libraries
+        Analysis --> Pandas[Pandas]
+        Analysis --> Plotly
+        Analysis --> Streamlit[Streamlit]
+        Analysis --> Pyspark[Pyspark_SQL]
+        
+        Charts --> Plotly
+        
+        SQLQuery --> Pyspark
+        SQLQuery --> Streamlit
+        
+        Utils --> Pandas
+        Utils --> YFinance
+    end

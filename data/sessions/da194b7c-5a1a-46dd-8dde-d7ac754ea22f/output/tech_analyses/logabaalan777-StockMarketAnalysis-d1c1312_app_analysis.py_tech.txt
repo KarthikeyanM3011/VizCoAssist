@@ -1,0 +1,20 @@
+1. Programming languages:
+   - Python
+   - Java ( SparkSession is built on top of Java )
+
+2. Frameworks and libraries:
+   - Streamlit
+   - Plotly Express
+   - Plotly Graph Objects
+   - PySpark ( part of Apache Spark )
+   - Pandas
+   - NumPy (not explicitly imported but pandas relies on numpy )
+
+3. Database technologies:
+   - Apache Cassandra ( not directly referenced, but likely used for data storage )
+   - MySQL or PostgreSQL ( likely used as a database backend )
+
+4. Other notable technologies:
+   - EMA ( Exponential Moving Average ) calculation
+   - RSI ( Relative Strength Index ) calculation
+   - Bollinger Bands calculation

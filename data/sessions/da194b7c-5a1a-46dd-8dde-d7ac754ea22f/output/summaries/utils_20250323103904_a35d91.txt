@@ -1,0 +1,9 @@
+**Purpose**: This file is used to load and manipulate historical stock market data.
+
+**Key Components**: The key component of this file is the `load_stock_data` function, which retrieves stock data from a specified date range using the yfinance library.
+
+**Data Flow**: Data flows into the file through the `start_date` and `end_date` parameters, which are used to load historical stock market data for Apple Inc. (AAPL) ticker symbols.
+
+**Dependencies**: This file depends on the pandas and yfinance libraries.
+
+**Interactions**: The `load_stock_data` function interacts with other parts of the system by returning loaded data, while also printing error messages in case of loading failures.

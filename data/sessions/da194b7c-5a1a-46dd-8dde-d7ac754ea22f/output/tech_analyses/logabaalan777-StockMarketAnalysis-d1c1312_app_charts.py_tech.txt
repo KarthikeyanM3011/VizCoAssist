@@ -1,0 +1,11 @@
+**Programming Language:**
+- Python
+
+**Frameworks/Libraries:**
+- plotly.express
+- pandas (implied by data parameter)
+
+**Notable Technologies:**
+- Plotly Express (used for creating interactive charts)
+ 
+No database technologies are referenced.

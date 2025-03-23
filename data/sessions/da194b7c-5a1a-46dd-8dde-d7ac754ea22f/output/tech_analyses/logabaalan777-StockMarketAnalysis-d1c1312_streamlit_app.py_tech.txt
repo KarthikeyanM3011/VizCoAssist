@@ -1,0 +1,17 @@
+1. Programming languages:
+   - Python
+   - (Note: Assuming Python is present as it is the language used for coding this specific file)
+
+2. Frameworks or libraries:
+   - Streamlit
+   - pandas (referenced indirectly through `load_stock_data` function, but not explicitly imported)
+   - numpy (referenced indirectly through `load_stock_data` function, but not explicitly imported)
+   - sqlite3 (referenced indirectly through `execute_sql_query` function, but not explicitly imported)
+
+3. Database technologies:
+   - SQLite
+
+4. Notable technologies:
+   - Streamlit's session state management
+   - Pandas and NumPy data manipulation
+   - Sqlite3 database queries

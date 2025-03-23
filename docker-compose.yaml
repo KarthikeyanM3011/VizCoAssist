@@ -1,0 +1,53 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile 
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    depends_on:
+      - backend-call-agent
+      - call-agent
+
+  backend-call-agent:
+    build:
+      context: .
+      dockerfile: call_agent/backend-call-agent/Dockerfile 
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./call_agent/backend-call-agent:/main
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn main:app --host 0.0.0.0 --port 5000 --reload
+
+  call-agent:
+    build:
+      context: .
+      dockerfile: call_agent/call-agent/call-agent/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./call_agent/call-agent:/src
+      - /src/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload

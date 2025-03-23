@@ -1,0 +1,13 @@
+1. Programming languages:
+   - Python
+2. Frameworks or libraries imported or used:
+   - pandas
+   - yfinance
+3. Database technologies referenced:
+   - None
+4. Notable technologies:
+   - Yahoo Finance API (yfinance)
+5. Libraries used for data manipulation:
+   - pandas
+6. Library used for API requests:
+   - yfinance
