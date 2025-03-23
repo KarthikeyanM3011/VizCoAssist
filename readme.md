@@ -307,6 +307,57 @@ Get AI-generated voice response.
 
 ---
 
+
+## 📸 VizCoAssist in Action
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/ChatBot.jpg" alt="AI Codebase Assistant" width="320"><br>
+        <small><b>AI-Powered Code Assistant</b></small>
+      </td>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/DashBoard.jpg" alt="Project Dashboard" width="320"><br>
+        <small><b>Project Dashboard</b></small>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/High_Level.jpg" alt="High-Level Architecture Diagram" width="320"><br>
+        <small><b>High-Level Architecture Visualization</b></small>
+      </td>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/Low_level.jpg" alt="Low-Level Architecture Diagram" width="320"><br>
+        <small><b>Low-Level Architecture Visualization</b></small>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/Summary1.jpg" alt="File Summary View" width="320"><br>
+        <small><b>Detailed File Summary Analysis</b></small>
+      </td>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/TeckStack.jpg" alt="Tech Stack Analysis" width="320"><br>
+        <small><b>Comprehensive Tech Stack Analysis</b></small>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/Upload.jpg" alt="Upload Interface" width="320"><br>
+        <small><b>Intuitive Upload Interface</b></small>
+      </td>
+      <td align="center">
+        <img src="https://github.com/KarthikeyanM3011/VizCoAssist/blob/main/Output_Images/Upload.jpg" alt="GitHub Repository Import" width="320"><br>
+        <small><b>GitHub Repository Integration</b></small>
+      </td>
+    </tr>
+  </table>
+  <p><i>VizCoAssist's intuitive interface provides deep insights into your codebase with just a few clicks</i></p>
+</div>
+
+---
+
 ## 📊 Future Roadmap
 
 Our vision for VizCoAssist extends beyond its current capabilities:
